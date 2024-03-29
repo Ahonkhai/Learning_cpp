@@ -58,7 +58,18 @@ int main() {
 
 
     // BOOLEAN (TRUE/FALSE) 👍/👎
+
+    bool student = false;
+    bool power = false;
+    bool for_sale = true;
     
+
+    // Strings 🧵🧵🧵 lol (Take a look at line 53 and 54)
+
+    std::string  last_name = "Mumbleson";
+
+    std::cout << last_name << std::endl;
+
 
 
     return 0;
