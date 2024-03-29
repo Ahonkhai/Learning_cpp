@@ -1,6 +1,10 @@
 // i'm installing MSYS2 🦆🦆
 #include <iostream>
 
+namespace first{
+    int name_space = 10;
+}
+
 int main() {
     // 🦆🦆🦆
     std::cout << "i like pizza! 🍕" << std::endl; // ok so "<< std::endl" and "<< '\n'"
@@ -82,7 +86,15 @@ int main() {
     double radius = 10;
     double circumference = 2 * PI * radius;
 
-    std::cout << circumference << "cm";
+    std::cout << circumference << "cm" << '\n';
+
+    // NAMESPACE 😕😕
+
+    int name_space = 2;
+
+    std::cout << name_space << std::endl;
+    /*Reference namespace*/
+    std::cout << first::name_space << '\n';
 
     return 0;
 }
