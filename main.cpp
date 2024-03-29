@@ -37,13 +37,24 @@ int main() {
 
     // Char (single characters) 🦆🦆🦆
 
-    char first_name = 'David';
-    char surname = 'Ahonkhai';
+
+    /*DOESN'T WORK 💀💀💀💀*/
+    // char first_name = 'David';
+    // char surname = 'Ahonkhai';
+
+    char initials = '$';
+
+    std::cout << initials << '\n';
 
 
     // quick test 💀💀💀💀
-    std::cout << "Hello, my name is" << " " << first_name << " " << surname << "i am " << age << "years old" << '\n';
-    // ok char is actually single characters like "n" and stuff like that 💀💀💀
+    // ok fix time lol
+
+    std::string first_name = "David";
+    std::string surname = "Ahonkhai";
+
+    std::cout << "Hello, my name is" << " " << first_name << " " << surname << " " << "i am " << age << "years old" << '\n';
+    // ok char is actually single characters like "n" and stuff like that 💀💀💀 lol
 
 
 
