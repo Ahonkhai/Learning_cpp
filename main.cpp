@@ -5,6 +5,10 @@ namespace first{
     int name_space = 10;
 }
 
+namespace second{
+    int name_space = 15;
+}
+
 int main() {
     // 🦆🦆🦆
     std::cout << "i like pizza! 🍕" << std::endl; // ok so "<< std::endl" and "<< '\n'"
@@ -93,8 +97,13 @@ int main() {
     int name_space = 2;
 
     std::cout << name_space << std::endl;
-    /*Reference namespace*/
+    /*Reference namespace 🦆🦆🦆*/
     std::cout << first::name_space << '\n';
+
+    /*Reference namespace 2nd way 💀💀💀*/
+    using namespace second;
+
+    std::cout << ::second::name_space << std::endl; 
 
     return 0;
 }
