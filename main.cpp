@@ -57,6 +57,9 @@ int main() {
     // ok char is actually single characters like "n" and stuff like that 💀💀💀 lol
 
 
+    // BOOLEAN (TRUE/FALSE) 👍/👎
+    
+
 
     return 0;
 }
