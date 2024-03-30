@@ -10,7 +10,16 @@ namespace second{
     int name_space = 15;
 }
 
-typedef std::string text_t;
+// typedef std::string text_t;
+// typedef int number_n;
+// 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎
+
+// ok so i can replace the "typedef" with using 💀💀💀
+
+using text_t = std::string;
+using number_n = int;
+// lol wrong format 
+// Fixed 🗿🗿🗿🗿🗿🗿
 
 int main() {
     // 🦆🦆🦆
@@ -114,6 +123,7 @@ int main() {
     (alias or nickname (kinda)) for another data type
     it's a new identifier for existing type, helps with 
     readability and reduces typos 💀*/
+    /* only ise when theres a clear benefit ❗❗❗*/
 
     // quick test 
 
@@ -121,5 +131,19 @@ int main() {
 
     std::cout << mood << std::endl;
     // success 🦆🦆🦆
+
+
+    /* ok so apparently its better to use "using" rather then "typedef"
+    ok i'm about to update the code lol (useless comment)*/
+    
+    number_n num = 5;
+
+    std::cout << num << std::endl;
+
+    // ARITHMETIC OPERATORS ➕➖➗✖️
+    /*Return the result of a specific arithmetic operation 🦆🦆🦆 */
+
+
+
     return 0;
 }
