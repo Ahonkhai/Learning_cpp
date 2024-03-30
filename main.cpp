@@ -1,5 +1,6 @@
 // i'm installing MSYS2 🦆🦆
 #include <iostream>
+#include <vector>
 
 namespace first{
     int name_space = 10;
@@ -8,6 +9,8 @@ namespace first{
 namespace second{
     int name_space = 15;
 }
+
+typedef std::string text_t;
 
 int main() {
     // 🦆🦆🦆
@@ -105,5 +108,18 @@ int main() {
 
     std::cout << ::second::name_space << std::endl; 
 
+
+    // TYPEDEF 🤔🤔🤔
+    /* Reserved keyword used to create an additional name 
+    (alias or nickname (kinda)) for another data type
+    it's a new identifier for existing type, helps with 
+    readability and reduces typos 💀*/
+
+    // quick test 
+
+    text_t mood = "fine";
+
+    std::cout << mood << std::endl;
+    // success 🦆🦆🦆
     return 0;
 }
