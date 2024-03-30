@@ -79,7 +79,7 @@ int main() {
 
     // BOOLEAN (TRUE/FALSE) 👍/👎
 
-    bool student = false;
+    bool student_test = false;
     bool power = false;
     bool for_sale = true;
     
@@ -142,6 +142,16 @@ int main() {
 
     // ARITHMETIC OPERATORS ➕➖➗✖️
     /*Return the result of a specific arithmetic operation 🦆🦆🦆 */
+
+    int student = 20;
+
+    student += 1;
+
+    std::cout << student << std::endl;
+
+    // SUCCESS ✅✅✅
+
+
 
 
 
