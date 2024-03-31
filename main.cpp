@@ -143,15 +143,25 @@ int main() {
     // ARITHMETIC OPERATORS ➕➖➗✖️
     /*Return the result of a specific arithmetic operation 🦆🦆🦆 */
 
-    int student = 20;
+    int student = 19;
 
-    student += 1;
+    student+=1;
+    // student++; can also be used if its a single increment  same goes for student--; (decrements)
 
     std::cout << student << std::endl;
+
+    int remainder; 
+
+    remainder = student % 2; 
+
+    std::cout << remainder << '\n';
 
     // SUCCESS ✅✅✅
 
 
+    // TYPE CONVERSION 💀💀💀 = converting a value of one data type to another 
+    /*types : implicit = automatic
+              explicit =  precode value with new data type (int)*/
 
 
 
