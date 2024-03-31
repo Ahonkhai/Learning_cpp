@@ -163,6 +163,60 @@ int main() {
     /*types : implicit = automatic
               explicit =  precode value with new data type (int)*/
 
+    
+    double a = 2.50;
+
+    double b = (int) 1.50;
+
+    std::cout << a << '\n';
+    std::cout << b << std::endl;
+
+
+    // CHALLENGES 
+
+    // challenge 1 🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆
+
+    /*For the first challenge, which is calculating the area of a circle, here's a breakdown of what you'll need to do ⭕⭕⭕:
+    Prompt User Input: Ask the user to input the radius of the circle.
+    Define PI Constant: Use the const keyword to define the value of PI as 3.14159.
+    Calculate Area: Use the formula for calculating the area of a circle, which is area = PI * radius * radius.
+    Display Result: Print out the calculated area of the circle.*/
+
+    std::cout << "let's calculate the area of a circle" << '\n';
+
+    const double PI_area = 3.14159;
+
+    double radius_area;
+
+    std::cout << "provide the radius: " << '\n';
+    std::cin >> radius_area;
+
+
+    double area = PI_area * radius_area * radius_area;
+    std::cout << PI_area << " " << "x" << " " << radius_area << " " << "*" << " " << radius_area << '\n';
+    std::cout << area << std::endl;  
+
+    //  CORRECT ✅✅✅
+
+    // Quick name test 🤔🤔🤔
+
+    std::string my_name;
+
+    std::cout << "what is your name?" << '\n';
+    std::cin >> my_name;
+    std::cout <<"nice to meet you " << my_name << std::endl;
+
+    // challenge 2 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
+    /*
+    Certainly! The intermediate challenge involves creating a simple login system. Here's a step-by-step explanation of how you can approach this challenge:
+    Prompt User for Input: Display a message asking the user to enter their username.
+    Receive Username Input: Use std::cin to receive the username input from the user.
+    Prompt User for Password: Display a message asking the user to enter their password.
+    Receive Password Input: Use std::cin to receive the password input from the user.
+    Check Credentials: Compare the entered username and password with predefined values (for example, "David" for username and "OpenAI" for password).
+    Print Result: If the entered username and password match the predefined values, print "Login successful". Otherwise, print "Login failed".*/
+
 
 
     return 0;
