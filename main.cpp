@@ -171,6 +171,8 @@ int main() {
     std::cout << a << '\n';
     std::cout << b << std::endl;
 
+    // basically just changes data types 🦆
+
 
     // CHALLENGES 
 
@@ -217,7 +219,7 @@ int main() {
     Print Result: If the entered username and password match the predefined values, print "Login successful". Otherwise, print "Login failed".*/
 
 
-    // uhhh quick note: i'm using only js knowledge on this and nothing else, i haven't learned c++ if statements and stuff 😋😋😋
+    // uhhhh quick note: i'm using only js knowledge on this and nothing else, i haven't learned c++ if statements and stuff 😋😋😋
 
     std::string correct_username = "Ahonkhai";
     std::string correct_password = "Ahonkhai14@";
@@ -246,10 +248,12 @@ int main() {
 
     //  Challenge 3 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
-    /*Great! Let's move on to the next challenge. Since you're continuing with JavaScript-inspired approaches, let's explore a challenge related to handling user input and performing calculations.
+    /*Great! Let's move on to the next challenge. Since you're continuing with JavaScript-inspired approaches, let's explore a challenge related to handling user input and 
+    performing calculations.
 
     Advanced Challenge: Simple Calculator
-    Create a simple calculator program that performs basic arithmetic operations (+, -, *, /) on two numbers entered by the user. The program should prompt the user to enter two numbers and an operator, perform the calculation, and then display the result.
+    Create a simple calculator program that performs basic arithmetic operations (+, -, *, /) on two numbers entered by the user. The program should prompt the user to enter 
+    two numbers and an operator, perform the calculation, and then display the result.
 
     Here's how you can approach this challenge:
 
@@ -262,6 +266,56 @@ int main() {
     Perform the calculation based on the operator and the two numbers.
     Display the result to the user.
     You can continue using std::cin for user input and implement if statements or switch statements to handle different arithmetic operations.*/
+
+    std::cout << "Welcome to simple c++ calculator" << '\n';
+
+    // First number 🦆
+    std::cout << "Enter first number: " << '\n';
+
+    double first_number;
+    std::cin >> first_number;
+
+    // Second number 🦆🦆
+    std::cout << "Enter second number" << '\n';
+
+    double second_number;
+    std::cin >> second_number;
+
+    // Arithmetic operator i think 💪😋
+    std::cout << "Enter the operator (+, -, *, /)" << '\n';
+
+    char op;
+    std::cin >> op;
+
+     // Perform the calculation based on the operator
+    double result;
+    switch(op) {
+        case '+':
+            result = first_number + second_number;
+            break;
+        case '-':
+            result = first_number - second_number;
+            break;
+        case '*':
+            result = first_number * second_number;
+            break;
+        case '/':
+            if (second_number != 0) {
+                result = first_number / second_number;
+            } else {
+                std::cout << "Error: Division by zero!" << std::endl;
+                return 1; // Exit program with error code
+            }
+            break;
+        default:
+            std::cout << "Error: Invalid operator!" << std::endl;
+            return 1; // Exit program with error code
+    }
+
+    // Display the result
+    std::cout << "Result: " << result << std::endl;
+
+    
 
     return 0;
 }
