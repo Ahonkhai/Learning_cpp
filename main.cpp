@@ -208,8 +208,7 @@ int main() {
 
     // challenge 2 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
-    /*
-    Certainly! The intermediate challenge involves creating a simple login system. Here's a step-by-step explanation of how you can approach this challenge:
+    /* Certainly! The intermediate challenge involves creating a simple login system. Here's a step-by-step explanation of how you can approach this challenge:
     Prompt User for Input: Display a message asking the user to enter their username.
     Receive Username Input: Use std::cin to receive the username input from the user.
     Prompt User for Password: Display a message asking the user to enter their password.
@@ -218,6 +217,32 @@ int main() {
     Print Result: If the entered username and password match the predefined values, print "Login successful". Otherwise, print "Login failed".*/
 
 
+    // uhhh quick note: i'm using only js knowledge on this and nothing else, i haven't learned c++ if statements and stuff 😋😋😋
+
+    std::string correct_username = "Ahonkhai";
+    std::string correct_password = "Ahonkhai14@";
+
+
+    // input username 😋😋😋
+    std::string username;
+
+    std::cout << "input username: " << '\n';
+    std::cin >> username;
+
+    // input password 💀💀💀
+    std::string password;
+
+    std::cout << "input password: " << '\n';
+    std::cin >> password;
+
+    // if statements time lets go 🦆🦆🦆🦆🦆🦆🦆
+    if (username == correct_username && password == correct_password) {
+        std::cout << "login successful" << std::endl;
+    } else {
+        std::cout << "login Failed1" << std::endl;
+    }
+
+    // LoL i got it correct first try 🦆🦆🦆🦆😋
 
     return 0;
 }
