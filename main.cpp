@@ -174,7 +174,7 @@ int main() {
 
     // CHALLENGES 
 
-    // challenge 1 🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆
+    // challenge 1 🦆🦆🦆🦆🦆🦆🦆🦆
 
     /*For the first challenge, which is calculating the area of a circle, here's a breakdown of what you'll need to do ⭕⭕⭕:
     Prompt User Input: Ask the user to input the radius of the circle.
@@ -206,7 +206,7 @@ int main() {
     std::cin >> my_name;
     std::cout <<"nice to meet you " << my_name << std::endl;
 
-    // challenge 2 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+    // challenge 2 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
     /* Certainly! The intermediate challenge involves creating a simple login system. Here's a step-by-step explanation of how you can approach this challenge:
     Prompt User for Input: Display a message asking the user to enter their username.
@@ -243,6 +243,25 @@ int main() {
     }
 
     // LoL i got it correct first try 🦆🦆🦆🦆😋
+
+    //  Challenge 3 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
+    /*Great! Let's move on to the next challenge. Since you're continuing with JavaScript-inspired approaches, let's explore a challenge related to handling user input and performing calculations.
+
+    Advanced Challenge: Simple Calculator
+    Create a simple calculator program that performs basic arithmetic operations (+, -, *, /) on two numbers entered by the user. The program should prompt the user to enter two numbers and an operator, perform the calculation, and then display the result.
+
+    Here's how you can approach this challenge:
+
+    Prompt the user to enter the first number.
+    Receive the first number input from the user.
+    Prompt the user to enter the second number.
+    Receive the second number input from the user.
+    Prompt the user to enter an operator (+, -, *, /).
+    Receive the operator input from the user.
+    Perform the calculation based on the operator and the two numbers.
+    Display the result to the user.
+    You can continue using std::cin for user input and implement if statements or switch statements to handle different arithmetic operations.*/
 
     return 0;
 }
