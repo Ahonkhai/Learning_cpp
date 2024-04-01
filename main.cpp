@@ -163,7 +163,7 @@ int main() {
     /*types : implicit = automatic
               explicit =  precode value with new data type (int)*/
 
-    
+    //  IMPLICIT CONVERSION
     double a = 2.50;
 
     double b = (int) 1.50;
@@ -173,6 +173,16 @@ int main() {
 
     // basically just changes data types 🦆
 
+    // EXPLICIT CONVERSION 💪
+    std::cout << (char) 100 << '\n';
+
+
+    int correct = 5;
+    int question = 10;
+
+    double score = correct/(double)question * 100;
+
+    std::cout << score << "%" << '\n';
 
     // CHALLENGES 
 
