@@ -213,11 +213,12 @@ int main() {
     // Quick name test 🤔🤔🤔
 
 
+    std::string my_name;
     std::cout << "what is your name?" << '\n';
     
-    std::string my_name;
-    std::cin >> my_name;
-    
+    std::getline(std::cin >> std::ws, my_name); // ok so this line "getline func" is so your string can recognize spaces in my understanding
+    // ok i added something else to the line "std::ws" its meant so something something white spaces but i kinda understand nothing about it 🦆🦆🦆
+
     std::cout <<"nice to meet you " << my_name << '\n';
     std::cout << "how old are you" << '\n';
     
