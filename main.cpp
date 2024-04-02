@@ -212,11 +212,18 @@ int main() {
 
     // Quick name test 🤔🤔🤔
 
-    std::string my_name;
 
     std::cout << "what is your name?" << '\n';
+    
+    std::string my_name;
     std::cin >> my_name;
-    std::cout <<"nice to meet you " << my_name << std::endl;
+    
+    std::cout <<"nice to meet you " << my_name << '\n';
+    std::cout << "how old are you" << '\n';
+    
+    int my_age;
+    std::cin >> my_age;
+    std::cout << "i see you are " << my_age << std::endl;
 
     // challenge 2 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
@@ -324,6 +331,8 @@ int main() {
 
     // Display the result
     std::cout << "Result: " << result << std::endl;
+
+    // xup ✌️ 
 
     
 
