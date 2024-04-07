@@ -334,6 +334,15 @@ int main() {
     std::cout << "Result: " << result << std::endl;
 
     // xup ✌️ 
+    // Math functions 
+
+    double j = 2;
+    double k = 3; 
+    double l;
+
+    l = std::max(j, k);
+
+    std::cout << l << '\n';
 
     
 
