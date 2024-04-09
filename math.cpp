@@ -36,11 +36,20 @@ int main () {
     // quick namespace test 🦆🦆🦆
     std::cout << first::test_number << '\n';
     std::cout << second::test_number << '\n';
+    
+    //  another test 😈🙏
+    double age = 18;
+    std::cout << age << '\n';
 
+    age = 15;
+    std::cout << age << '\n';
     
+    /* Assignment is a fundamental concept in programming, particularly in languages like C++ and many others. It refers to the act of storing a value in a variable.
+    In C++ (and in many other programming languages), the assignment operator = is used to assign a value to a variable. for example : ln 41 - 45 💪🦆
+    Assignment allows you to store data in variables so that you can manipulate and work with that data in your program. */
     
-    
-    
+    z_abs = abs(-10);
+    std::cout << z_abs << '\n';
     
     return 0;
 }
