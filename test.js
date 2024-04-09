@@ -11,3 +11,5 @@ function sum() {
   }
   
   console.log("lol array sum", sum());
+
+

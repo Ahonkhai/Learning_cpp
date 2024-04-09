@@ -48,7 +48,9 @@ int main () {
     In C++ (and in many other programming languages), the assignment operator = is used to assign a value to a variable. for example : ln 41 - 45 💪🦆
     Assignment allows you to store data in variables so that you can manipulate and work with that data in your program. */
     
-    z_abs = abs(-10);
+    z_abs = abs(-10); 
+    /* function is used to return the absolute value of a number. The absolute value of a number is its value without regard to its sign. 
+    In other words, it returns the distance of the number from zero on the number line. */
     std::cout << z_abs << '\n';
     
     return 0;
