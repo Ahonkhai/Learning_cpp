@@ -33,6 +33,8 @@ int main () {
     double z_sqrt;
     double z_abs;
     double z_round;
+    double z_ceil;
+    double z_floor;
 
     z = std::max(x, y); /* This functions shows the max number between variables 😈🙏*/
     w = std::min(x, y); /* This function shows the min number between variables 😈🙏*/
@@ -79,7 +81,13 @@ int main () {
     std::cout << "THe negative would be: "<< negative_round << '\n';
     std::cout << "THe Positive would be: " << positive_round << '\n';
 
+    z_ceil = ceil(10.5);
+    std::cout << z_ceil << '\n';
+    // The ceil function in C++ is used to round a number up to the nearest integer, always rounding away from zero. It's part of the
 
+    z_floor = floor(3.99);
+    std::cout << z_floor << '\n';
+    // The floor function in C++ is the counterpart to ceil. It rounds a number down to the nearest integer, always rounding towards zero. (ceil's counterpart)
 
 
     /* Task: Find the Minimum and Maximum of Three Numbers
