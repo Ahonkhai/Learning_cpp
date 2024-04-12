@@ -166,6 +166,49 @@ int main () {
 
     //  done i guess tho thats just like 2 lines of code 😭😭😭
 
+    
+    
+    /* Objective: Write a C++ program that calculates the hypotenuse of a right-angled triangle.
+
+    
+    Requirements:
+    
+    Input:
+    The program should prompt the user to enter the lengths of the two non-hypotenuse sides (base and height) of a right-angled triangle.
+    Assume the user will enter valid positive numbers.
+    Calculation:
+
+    Use the Pythagorean theorem to calculate the hypotenuse: hypotenuse = sqrt(side1^2 + side2^2), where side1 and side2 are the lengths of the two non-hypotenuse sides.
+    Output:
+
+    The program should display the calculated hypotenuse of the triangle with an appropriate message.
+    
+    Bonus:
+    Enhance the program to handle potential errors like negative input for side lengths. You can display an error message and exit the program gracefully. */
+
+
+    std::cout << "lets calculate the hypotenuse of a triangle" << '\n';
+
+
+    double a, b, hypotenuse;
+
+    // BASE
+    std::cout << "Provide the base: " << '\n';
+    std::cin >> a;
+
+    // HEIGHT
+    std::cout << "Provide the height: " << '\n';
+    std::cin >> b;
+    
+    hypotenuse = sqrt(pow(a, 2) + pow(b, 2));
+    std::cout << "The hypotenuse is: " << hypotenuse << std::endl;
+
+
+
+
+
+
+
     return 0;
 }
 
