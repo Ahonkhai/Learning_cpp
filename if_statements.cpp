@@ -14,16 +14,17 @@
 
         std::string welcome = "welcome to the club";
 
-    if (age >= 18) {
-        std::cout << "Welcome!" << '\n'; 
+    if (age >= 30) {
+         std::cout << "You're too old to have fun." << '\n';
     } else if (age <= 0) {
         std::cout << "That age seems unlikely. Are you trolling?" << '\n';
-    } else if (age >= 30) {
-        std::cout << "You're too old to have fun." << '\n';  
+    } else if (age >= 18) {
+        std::cout << "Welcome!" << '\n'; 
     } else {
         std::cout << "You're still young! Enjoy this time." << '\n';  
     }
 
 
+    
         return 0;
     }
