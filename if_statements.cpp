@@ -6,7 +6,7 @@
 
     int main() {
 
-        // make an app that asks for your age if youre above 18 you are allowed into the club if not the console logs out "Too young"
+        // make an app that asks for your age if you're above 18 you are allowed into the club if not the console logs out "Too young"
         
         std::cout << "How old are you" << '\n';
         int age;
