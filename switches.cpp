@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main() {
-    // Month number (SWITCHES, CASES, BREAKS) its meant to replace else if more efficiently 
+int main()
+{
+    // Month number (SWITCHES, CASES, BREAKS) its meant to replace else if more efficiently
 
     int month;
     std::cout << "Enter the month number" << '\n';
@@ -46,13 +47,10 @@ int main() {
         std::cout << "it is December" << '\n';
         break;
     default:
-        std::cout << "Please only input numbers from 1-12" <<'\n';
+        std::cout << "Please only input numbers from 1-12" << '\n';
     }
 
-
-
-
-    // Grade chacker lol 
+    // Grade chacker lol
 
     char grade;
     std::cout << "Please input grade" << '\n';
@@ -62,7 +60,7 @@ int main() {
     {
     case 'A':
         std::cout << "Congratulations you got an A" << '\n';
-        break; 
+        break;
     case 'B':
         std::cout << "Good job, you got a B!" << '\n';
         break;
@@ -80,5 +78,5 @@ int main() {
         break;
     }
 
-    return 0; 
+    return 0;
 }

@@ -2,29 +2,35 @@
 #include <vector>
 #include <cmath> /* REMEMBER TO PUT THIS IF YOU"RE GONNA DO MATH EQUATIONS*/
 
-namespace first{
+namespace first
+{
     double test_number = 20;
 }
 
-namespace second{
+namespace second
+{
     double test_number = 10;
 }
 
 // The next three namespaces is for the max/min task
-namespace number_one{
+namespace number_one
+{
     double number;
 }
 
-namespace number_two{
+namespace number_two
+{
     double number;
 }
 
-namespace number_three{
+namespace number_three
+{
     double number;
 }
 
-int main () {
-    
+int main()
+{
+
     double w;
     double x = 2;
     double y = 10;
@@ -48,37 +54,36 @@ int main () {
     z_sqrt = sqrt(9); /* This function is meant for square root's */
     std::cout << "Square root is:  " << z_sqrt << '\n';
 
-
     // quick namespace test 🦆🦆🦆
     std::cout << first::test_number << '\n';
     std::cout << second::test_number << '\n';
-    
+
     //  another test 😈🙏
     double age = 18;
     std::cout << age << '\n';
 
     age = 15;
     std::cout << age << '\n';
-    
+
     /* Assignment is a fundamental concept in programming, particularly in languages like C++ and many others. It refers to the act of storing a value in a variable.
     In C++ (and in many other programming languages), the assignment operator = is used to assign a value to a variable. for example : ln 41 - 45 💪🦆
     Assignment allows you to store data in variables so that you can manipulate and work with that data in your program. */
-    
-    z_abs = abs(-10); 
-    /* function is used to return the absolute value of a number. The absolute value of a number is its value without regard to its sign. 
+
+    z_abs = abs(-10);
+    /* function is used to return the absolute value of a number. The absolute value of a number is its value without regard to its sign.
     In other words, it returns the distance of the number from zero on the number line. */
     std::cout << z_abs << '\n';
-    
+
     z_round = round(3.14);
     std::cout << z_round << '\n';
 
-    // Its rounder the number to the nearest integer 
+    // Its rounder the number to the nearest integer
     // Quick Round test 🦆🦆🦆
 
     double negative_round = round(0.4);
     double positive_round = round(0.6);
 
-    std::cout << "THe negative would be: "<< negative_round << '\n';
+    std::cout << "THe negative would be: " << negative_round << '\n';
     std::cout << "THe Positive would be: " << positive_round << '\n';
 
     z_ceil = ceil(10.5);
@@ -88,7 +93,6 @@ int main () {
     z_floor = floor(3.99);
     std::cout << z_floor << '\n';
     // The floor function in C++ is the counterpart to ceil. It rounds a number down to the nearest integer, always rounding towards zero. (ceil's counterpart)
-
 
     /* Task: Find the Minimum and Maximum of Three Numbers
 
@@ -105,27 +109,25 @@ int main () {
 
     Try incorporating namespaces to organize your code. You could create a separate namespace for user input functionalities. */
 
-    
-    
     // FIRST NUMBER 1️⃣1️⃣1️⃣
     // The console asks for the users input(number)
     std::cout << "Enter first number: " << '\n';
     // User input 🦆
     std::cin >> number_one::number;
     // console outputs users input 💀💀💀
-    std::cout<< "First number is: "<< number_one::number << '\n';
-    
+    std::cout << "First number is: " << number_one::number << '\n';
+
     //  SECOND NUMBER 2️⃣2️⃣2️⃣
     std::cout << "Enter second number: " << '\n';
     std::cin >> number_two::number;
-    std::cout<< "second number is: " << number_two::number << '\n';
+    std::cout << "second number is: " << number_two::number << '\n';
 
     // 😈😈😈 lol it's working
-    
-    // THiRD NUMBER 
+
+    // THiRD NUMBER
     std::cout << "Enter third number: " << '\n';
     std::cin >> number_three::number;
-    std::cout<< "Third number is: " << number_three::number << '\n';
+    std::cout << "Third number is: " << number_three::number << '\n';
 
     // std::cout << "first number is: " << first_number << std::endl;
     // 😈😈🙏 lol ok
@@ -134,7 +136,7 @@ int main () {
     double max_number = std::max(number_one::number, std::max(number_two::number, number_three::number));
     std::cout << "The max number would be: " << max_number << '\n';
 
-     double min_number = std::min(number_one::number, std::min(number_two::number, number_three::number));
+    double min_number = std::min(number_one::number, std::min(number_two::number, number_three::number));
     std::cout << "The min number would be: " << min_number << '\n';
 
     // EZ PZ 💪🦆✌️
@@ -152,12 +154,12 @@ int main () {
 
     Display the Average:
     Add another std::cout statement to print the calculated average with a descriptive message:
-    
+
     Success Criteria:
     Your code should successfully take three separate user inputs for numbers.
     It should determine and display the minimum and maximum values using the existing logic.
     Additionally, it should calculate and display the average of the three numbers using the formula mentioned above.
-    
+
     Bonus Challenge:
     Try modifying your code to find the median (the middle value) of the three numbers, along with the minimum, maximum, and average. You can use sorting or conditional statements to achieve this. */
 
@@ -166,13 +168,11 @@ int main () {
 
     //  done i guess tho thats just like 2 lines of code 😭😭😭
 
-    
-    
     /* Objective: Write a C++ program that calculates the hypotenuse of a right-angled triangle.
 
-    
+
     Requirements:
-    
+
     Input:
     The program should prompt the user to enter the lengths of the two non-hypotenuse sides (base and height) of a right-angled triangle.
     Assume the user will enter valid positive numbers.
@@ -182,13 +182,11 @@ int main () {
     Output:
 
     The program should display the calculated hypotenuse of the triangle with an appropriate message.
-    
+
     Bonus:
     Enhance the program to handle potential errors like negative input for side lengths. You can display an error message and exit the program gracefully. */
 
-
     std::cout << "lets calculate the hypotenuse of a triangle" << '\n';
-
 
     double a, b, hypotenuse;
 
@@ -199,23 +197,9 @@ int main () {
     // HEIGHT
     std::cout << "Provide the height: " << '\n';
     std::cin >> b;
-    
+
     hypotenuse = sqrt(pow(a, 2) + pow(b, 2));
     std::cout << "The hypotenuse is: " << hypotenuse << std::endl;
 
-
-
-
-
-
-
     return 0;
 }
-
-
-
-
-
-
-
-
