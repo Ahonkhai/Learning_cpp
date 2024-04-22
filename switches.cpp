@@ -14,7 +14,7 @@ int main()
         std::cout << "it is january" << '\n';
         break;
     case 2:
-        std::cout << "it is Febuary" << '\n';
+        std::cout << "it is February" << '\n';
         break;
     case 3:
         std::cout << "it is March" << '\n';
@@ -50,7 +50,7 @@ int main()
         std::cout << "Please only input numbers from 1-12" << '\n';
     }
 
-    // Grade chacker lol
+    // Grade checker lol
 
     char grade;
     std::cout << "Please input grade" << '\n';
