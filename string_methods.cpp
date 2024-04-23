@@ -43,6 +43,10 @@ int main()
     // Accesses and prints the character at index 3 in the name
     std::cout << "Character at index 3: " << my_name.at(3) << '\n'; // it kinda acts as a substitute i dunno how to explain it
 
+    // Erases characters from index 0 to index 3 
+    my_name.erase(0, 3); 
+    std::cout << my_name << '\n';
+
     // Clears the content of the name
     my_name.clear(); // Clears basically
 
