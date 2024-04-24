@@ -1,3 +1,7 @@
- // int max_number = std::max(number_one::number, number_two::number, number_three::number,);
-    // std::cout << "The max number would be: " << max_number << '\n';
-
+    // else if (convert_from::scale == "C" || "Celsius" && convert_to::scale == "K" || "Kelvin" )
+    // {
+    //     std::cout << "Input temp in kelvin: " << '\n';
+    //     std::cin >> temp;
+    //     temp = temp - 273.15;
+    //     std::cout << temp << "K" << '\n';
+    // }

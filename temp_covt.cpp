@@ -1,5 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include <string>
+
+namespace convert_from
+{
+    std::string scale;
+}
+
+namespace convert_to
+{
+    std::string scale;
+}
 
 int main()
 {
@@ -7,31 +18,66 @@ int main()
 
     double temp;
     std::cout << "Temp converter" << '\n';
-    std::cout << "F = Farienheit" << '\n';
+    std::cout << "F = Fahrenheit" << '\n';
     std::cout << "C = Celsius" << '\n';
-    std::cout << "what scale would you like to conver to" << '\n';
-    char scale;
-    std::cin >> scale;
+    std::cout << "K = Kelvin" << '\n';
+    std::cout << "What scale would you like to convert from: ";
+    std::cin >> convert_from::scale;
+    std::cout << "What scale would you like to convert to: ";
+    std::cin >> convert_to::scale;
 
-    if (scale = "F" || "Farienheit")
+    if ((convert_from::scale == "F" || convert_from::scale == "Fahrenheit") &&
+        (convert_to::scale == "C" || convert_to::scale == "Celsius"))
     {
-        std::cout << "input temp in celsius: " << '\n';
-        std::cin >> temp;
-        temp = (1.8 * temp) + 32.00;
-        std::cout << temp << "F" << '\n';
-    }
-    else if (scale = "C" || "celsius")
-    {
-        std::cout << "input temp in fahrenheit: " << '\n';
+        std::cout << "Input temp in Fahrenheit: " << '\n';
         std::cin >> temp;
         temp = (temp - 32) * 5.0 / 9.0;
         std::cout << temp << "C" << '\n';
     }
+    else if ((convert_from::scale == "C" || convert_from::scale == "Celsius") &&
+             (convert_to::scale == "F" || convert_to::scale == "Fahrenheit"))
+    {
+        std::cout << "Input temp in Celsius: " << '\n';
+        std::cin >> temp;
+        temp = (temp * 9.0 / 5.0) + 32;
+        std::cout << temp << "F" << '\n';
+    }
+    else if ((convert_from::scale == "K" || convert_from::scale == "Kelvin") &&
+             (convert_to::scale == "C" || convert_to::scale == "Celsius"))
+    {
+        std::cout << "Input temp in Kelvin: " << '\n';
+        std::cin >> temp;
+        temp -= 273.15;
+        std::cout << temp << "C" << '\n';
+    }
+    else if ((convert_from::scale == "C" || convert_from::scale == "Celsius") &&
+             (convert_to::scale == "K" || convert_to::scale == "Kelvin"))
+    {
+        std::cout << "Input temp in Celsius: " << '\n';
+        std::cin >> temp;
+        temp += 273.15;
+        std::cout << temp << "K" << '\n';
+    }
+    else if ((convert_from::scale == "F" || convert_from::scale == "Fahrenheit") &&
+             (convert_to::scale == "K" || convert_to::scale == "Kelvin"))
+    {
+        std::cout << "Input temp in Fahrenheit: " << '\n';
+        std::cin >> temp;
+        temp = (temp - 32) * 5.0 / 9.0 + 273.15;
+        std::cout << temp << "K" << '\n';
+    }
+    else if ((convert_from::scale == "K" || convert_from::scale == "Kelvin") &&
+             (convert_to::scale == "F" || convert_to::scale == "Fahrenheit"))
+    {
+        std::cout << "Input temp in Kelvin: " << '\n';
+        std::cin >> temp;
+        temp = (temp - 273.15) * 9.0 / 5.0 + 32;
+        std::cout << temp << "F" << '\n';
+    }
     else
     {
-        std::cout << "invalid scale input" << '\n';
+        std::cout << "Invalid scale input" << '\n';
     }
-    // lol it works meh 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎
 
     return 0;
 }
