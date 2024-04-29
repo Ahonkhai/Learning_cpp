@@ -1,7 +1,4 @@
-    // else if (convert_from::scale == "C" || "Celsius" && convert_to::scale == "K" || "Kelvin" )
+  // for (double i = 0; i < 101; i++)
     // {
-    //     std::cout << "Input temp in kelvin: " << '\n';
-    //     std::cin >> temp;
-    //     temp = temp - 273.15;
-    //     std::cout << temp << "K" << '\n';
+    //     std::cout << i << '\n';
     // }
