@@ -24,11 +24,27 @@ int main()
             std::cout << i << '\n';
         }
     }
-
+    //  outputs 1 - 100
     for (double i = 0; i <= 100; i++)
     {
         std::cout << i << '\n';
     }
+    // outputs 1-100 in two's
+
+    for (int i = 0; i <= 100; i+=2)
+    {
+        std::cout << i << '\n';
+    }
+    // output 1-10 but backwards
+    
+    for (int i = 10; i >= 0; i--)
+    {
+        std::cout << i << '\n';
+    }
+    std::cout << "Happy new year" << '\n';
+    
+    // Break = break out of loop
+    // continue = skips current iteration 
 
     return 0;
 }
