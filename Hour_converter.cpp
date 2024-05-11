@@ -29,7 +29,7 @@ int power_converter()
     {
         cout << "converting to voltage" << '\n';
         cout << "input power: ";
-        cin >> voltage;
+        cin >> power;
         cout << "input current: ";
         cin >> current;
         voltage = power / current;
@@ -39,9 +39,9 @@ int power_converter()
     {
         cout << "converting to current" << '\n';
         cout << "input power: ";
-        cin >> voltage;
+        cin >> power;
         cout << "input voltage: ";
-        cin >> current;
+        cin >> voltage;
         current = power / voltage;
         cout << "The current is: " << current << endl;
     }
@@ -57,10 +57,12 @@ int hour_converter()
     string name;
 
     cout << "Hour converter running..." << '\n';
-    cout << "What are you converting to" << '\n';
+    cout << "What are you converting to" << '\n'
+         << "1. hour" << '\n'
+         << "2. second" << '\n';
     cin >> name;
 
-    if (name == "hour" || name == "hr")
+    if (name == "hour" || name == "1")
     {
         cout << "----- Converting hour to second -----" << '\n';
         cout << "Input hour: ";
@@ -68,7 +70,7 @@ int hour_converter()
         second = hour * 3600;
         cout << hour << " converted to seconds iss: " << second << endl;
     }
-    else if (name == "second" || name == "sec")
+    else if (name == "second" || name == "2")
     {
         cout << "----- Converting second to hour -----" << '\n';
         cout << "Input seconds: ";
@@ -113,7 +115,7 @@ int main()
 
     cout << "Hello " << name << " What assignment would you like to run?" << '\n';
     cout << "1. Power converter" << '\n'
-         << "2. hour converter" << '\n'
+         << "2. Hour converter" << '\n'
          << "3. triangle edge" << '\n'
          << "4. Remainder of two number" << '\n'
          << "5. perimeter of Rectangle" << '\n';
@@ -143,7 +145,7 @@ int main()
     else if (reply == "Perimeter of rectangle" || reply == "5")
     {
         cout << "----- Rectangle perimeter -----" << '\n';
-         perimeter_of_triangle();
+        perimeter_of_triangle();
     }
 
     return 0;
