@@ -1,151 +1,149 @@
 #include <iostream>
-#include <cmath>
+#include <string>
 
 using namespace std;
 
-int power_converter()
+void power_converter()
 {
     double voltage, current, power;
 
     cout << "Power converter running..." << '\n';
-    cout << "What are you converting to" << '\n'
-         << "1. Power(Watts)" << '\n'
-         << "2. voltage (volts)" << '\n'
-         << "3. current(amperes)" << '\n';
+    cout << "What are you converting to?\n"
+         << "1. Power (Watts)\n"
+         << "2. Voltage (Volts)\n"
+         << "3. Current (Amperes)\n";
     string reply;
     getline(cin, reply);
 
-    if (reply == "Power" || reply == "watts")
+    if (reply == "1" || reply == "Power" || reply == "watts")
     {
-        cout << "converting to power" << '\n';
-        cout << "input voltage: ";
+        cout << "Converting to power...\n";
+        cout << "Input voltage: ";
         cin >> voltage;
-        cout << "input current: ";
+        cout << "Input current: ";
         cin >> current;
         power = voltage * current;
-        cout << "The power is: " << power << endl;
+        cout << "The power is: " << power << " Watts" << endl;
     }
-    else if (reply == "voltage" || reply == "volts")
+    else if (reply == "2" || reply == "Voltage" || reply == "volts")
     {
-        cout << "converting to voltage" << '\n';
-        cout << "input power: ";
+        cout << "Converting to voltage...\n";
+        cout << "Input power: ";
         cin >> power;
-        cout << "input current: ";
+        cout << "Input current: ";
         cin >> current;
         voltage = power / current;
-        cout << "The voltage is: " << voltage << endl;
+        cout << "The voltage is: " << voltage << " Volts" << endl;
     }
-    else if (reply == "current" || reply == "amperes")
+    else if (reply == "3" || reply == "Current" || reply == "amperes")
     {
-        cout << "converting to current" << '\n';
-        cout << "input power: ";
+        cout << "Converting to current...\n";
+        cout << "Input power: ";
         cin >> power;
-        cout << "input voltage: ";
+        cout << "Input voltage: ";
         cin >> voltage;
         current = power / voltage;
-        cout << "The current is: " << current << endl;
+        cout << "The current is: " << current << " Amperes" << endl;
     }
-
-    return 0;
+    else
+    {
+        cout << "Invalid option selected!" << endl;
+    }
 }
 
-int hour_converter()
+void hour_converter()
 {
-    double hour;
-    double second;
-
-    string name;
+    double hour, second;
 
     cout << "Hour converter running..." << '\n';
-    cout << "What are you converting to" << '\n'
-         << "1. hour" << '\n'
-         << "2. second" << '\n';
-    cin >> name;
+    cout << "What are you converting to?\n"
+         << "1. Hour\n"
+         << "2. Second\n";
+    string reply;
+    getline(cin, reply);
 
-    if (name == "hour" || name == "1")
+    if (reply == "1" || reply == "Hour")
     {
-        cout << "----- Converting hour to second -----" << '\n';
+        cout << "Converting hour to second...\n";
         cout << "Input hour: ";
         cin >> hour;
         second = hour * 3600;
-        cout << hour << " converted to seconds iss: " << second << endl;
+        cout << hour << " hours converted to seconds is: " << second << " seconds" << endl;
     }
-    else if (name == "second" || name == "2")
+    else if (reply == "2" || reply == "Second")
     {
-        cout << "----- Converting second to hour -----" << '\n';
+        cout << "Converting second to hour...\n";
         cout << "Input seconds: ";
         cin >> second;
         hour = second / 3600;
-        cout << hour << " converted to seconds is: " << second << endl;
+        cout << second << " seconds converted to hours is: " << hour << " hours" << endl;
     }
-
-    return 0;
+    else
+    {
+        cout << "Invalid option selected!" << endl;
+    }
 }
 
-int triangle_edge()
+void triangle_edge()
 {
-    cout << "i dont know the formula lol" << '\n';
-    return 0;
+    cout << "This function is not implemented yet." << '\n';
 }
 
-int remainder()
+void remainder()
 {
-    cout << "i also dont know the formula" << '\n';
-    return 0;
+    cout << "This function is not implemented yet." << '\n';
 }
 
-int perimeter_of_triangle()
+void perimeter_of_rectangle()
 {
-    double perimeter, length, width;
-    cout << "input length: ";
+    double length, width, perimeter;
+    cout << "Input length: ";
     cin >> length;
-    cout << "input width: ";
+    cout << "Input width: ";
     cin >> width;
     perimeter = 2 * (length + width);
-    cout << "The perimeter is: " << perimeter << endl;
-    return 0;
+    cout << "The perimeter of the rectangle is: " << perimeter << endl;
 }
 
 int main()
 {
-    cout << "Welcome to liam's assignment" << '\n';
-    cout << "input name" << '\n';
+    cout << "Welcome to Liam's assignment" << '\n';
+    cout << "Input your name: ";
     string name;
     getline(cin, name);
 
-    cout << "Hello " << name << " What assignment would you like to run?" << '\n';
-    cout << "1. Power converter" << '\n'
-         << "2. Hour converter" << '\n'
-         << "3. triangle edge" << '\n'
-         << "4. Remainder of two number" << '\n'
-         << "5. perimeter of Rectangle" << '\n';
+    cout << "Hello " << name << ", what assignment would you like to run?\n"
+         << "1. Power converter\n"
+         << "2. Hour converter\n"
+         << "3. Triangle edge\n"
+         << "4. Remainder of two numbers\n"
+         << "5. Perimeter of rectangle\n";
     string reply;
     getline(cin, reply);
 
-    if (reply == "Power converter" || reply == "1")
+    if (reply == "1" || reply == "Power converter")
     {
-        cout << "----- POWER CONVERTER -----" << '\n';
         power_converter();
     }
-    else if (reply == "Hour converter" || reply == "2")
+    else if (reply == "2" || reply == "Hour converter")
     {
-        cout << "----- HOUR CONVERTER -----" << '\n';
         hour_converter();
     }
-    else if (reply == "Triangle edge" || reply == "3")
+    else if (reply == "3" || reply == "Triangle edge")
     {
-        cout << "----- Triangle edge -----" << '\n';
         triangle_edge();
     }
-    else if (reply == "Remainder of two numbers" || reply == "4")
+    else if (reply == "4" || reply == "Remainder of two numbers")
     {
-        cout << "----- Remainder -----" << '\n';
         remainder();
     }
-    else if (reply == "Perimeter of rectangle" || reply == "5")
+    else if (reply == "5" || reply == "Perimeter of rectangle")
     {
-        cout << "----- Rectangle perimeter -----" << '\n';
-        perimeter_of_triangle();
+        perimeter_of_rectangle();
+    }
+    else
+    {
+        cout << "Invalid option selected!" << endl;
     }
 
     return 0;
