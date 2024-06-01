@@ -12,7 +12,7 @@ namespace volume_length {
 }
 
 double square(double length); // Prototype function 🦆
-double volume(double length);
+double cube(double length);
 
 int main() {
     square_length::length = 6.0; 
@@ -22,7 +22,7 @@ int main() {
 
 
     volume_length::length = 5.0;
-    double vol = volume(volume_length::length);
+    double vol = cube(volume_length::length);
 
     cout << "The volume is: " << vol << "cm" << '\n';
 
@@ -33,6 +33,6 @@ double square(double length) { // receiving function 🦆🦆
     return pow(length, 2);
 }
 
-double volume(double length) {
+double cube(double length) {
     return pow(length, 3);
 }
