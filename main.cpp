@@ -1,3 +1,11 @@
+/********************* 
+ * 
+ * 
+ * LOl this was all done by Ahokhai 🦆
+ * 
+ * 
+*/
+
 // i'm installing MSYS2 🦆🦆
 #include <iostream>
 #include <vector>
