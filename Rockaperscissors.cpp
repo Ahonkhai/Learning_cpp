@@ -3,28 +3,28 @@
 
 using namespace std;
 
-char get_user_choice();                         // Function to get the user's choice
-char get_computer_choice();                     // Function to get the computer's choice
-void show_choice(char choice);                  // Function to display the chosen option
-void Choose_winner(char player, char computer); // Function to determine the winner
+char get_user_choice();
+char get_computer_choice();
+void show_choice(char choice);
+void Choose_winner(char player, char computer);
 
 int main()
 {
-    char player;   // Variable to store the player's choice
-    char computer; // Variable to store the computer's choice
+    char player;
+    char computer;
 
-    player = get_user_choice();       // Get the user's choice
-    computer = get_computer_choice(); // Get the computer's choice
+    player = get_user_choice();
+    computer = get_computer_choice();
 
-    show_choice(player);   // Show the user's choice
-    show_choice(computer); // Show the computer's choice
+    show_choice(player);
+    show_choice(computer);
 
-    Choose_winner(player, computer); // Determine the winner
+    Choose_winner(player, computer);
 
     cout << "Press Enter to exit...";
-    cin.ignore(); // Ignore any leftover input
-    cin.get(); // Wait for user to press Enter before closing
-    return 0; // End the program
+    cin.ignore();
+    cin.get();
+    return 0;
 }
 
 char get_user_choice()
@@ -33,33 +33,33 @@ char get_user_choice()
 
     do
     {
-        cout << "Rock, Paper, Scissors" << '\n'; // Game title 🎮
+        cout << "Rock, Paper, Scissors" << '\n';
         cout << "******************" << '\n';
-        cout << "Choose your option" << '\n'; // Prompt user to choose an option
+        cout << "Choose your option" << '\n';
         cout << "******************" << '\n';
         cout << "'R' for Rock \n'P' for Paper \n'S' for Scissors \n";
-        cin >> player; // Get the user's input
-    } while (player != 'R' && player != 'P' && player != 'S'); // Validate input
+        cin >> player;
+    } while (player != 'R' && player != 'P' && player != 'S');
 
     return player;
 }
 
 char get_computer_choice()
 {
-    srand(time(0));              // Seed the random number generator 🌱
-    int number = rand() % 3 + 1; // Generate a random number between 1 and 3 🎲
+    srand(time(0));
+    int number = rand() % 3 + 1;
 
     char computer;
     switch (number)
     {
     case 1:
-        computer = 'R'; // Computer picks Rock
+        computer = 'R';
         break;
     case 2:
-        computer = 'P'; // Computer picks Paper
+        computer = 'P';
         break;
     case 3:
-        computer = 'S'; // Computer picks Scissors
+        computer = 'S';
         break;
     }
 
@@ -89,23 +89,23 @@ void Choose_winner(char player, char computer)
 {
     if (player == 'R' && computer == 'S')
     {
-        cout << "You win!  Rock crushes Scissors." << endl;
+        cout << "You win! Rock crushes Scissors." << endl;
     }
     else if (player == 'S' && computer == 'R')
     {
-        cout << "You lose!  Rock crushes Scissors." << endl;
+        cout << "You lose! Rock crushes Scissors." << endl;
     }
     else if (player == 'P' && computer == 'R')
     {
-        cout << "You win!  Paper covers Rock." << endl;
+        cout << "You win! Paper covers Rock." << endl;
     }
     else if (player == 'R' && computer == 'P')
     {
-        cout << "You lose!  Paper covers Rock." << endl;
+        cout << "You lose! Paper covers Rock." << endl;
     }
     else if (player == 'S' && computer == 'P')
     {
-        cout << "You win!  Scissors cut Paper." << endl;
+        cout << "You win! Scissors cut Paper." << endl;
     }
     else if (player == 'P' && computer == 'S')
     {
@@ -113,6 +113,6 @@ void Choose_winner(char player, char computer)
     }
     else
     {
-        cout << "It's a tie!" << endl; // Handle the tie situation
+        cout << "It's a tie!" << endl;
     }
 }
