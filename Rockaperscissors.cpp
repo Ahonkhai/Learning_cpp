@@ -3,24 +3,24 @@
 
 using namespace std;
 
-char get_user_choice(); // Function to get the user's choice
-char get_computer_choice(); // Function to get the computer's choice
-void show_choice(char choice); // Function to display the chosen option
+char get_user_choice();                         // Function to get the user's choice
+char get_computer_choice();                     // Function to get the computer's choice
+void show_choice(char choice);                  // Function to display the chosen option
 void Choose_winner(char player, char computer); // Function to determine the winner
 
 int main()
 {
-    char player; // Variable to store the player's choice
+    char player;   // Variable to store the player's choice
     char computer; // Variable to store the computer's choice
 
-    player = get_user_choice(); // Get the user's choice
+    player = get_user_choice();       // Get the user's choice
     computer = get_computer_choice(); // Get the computer's choice
-    
-    show_choice(player); // Show the user's choice
+
+    show_choice(player);   // Show the user's choice
     show_choice(computer); // Show the computer's choice
-    
+
     Choose_winner(player, computer); // Determine the winner
-    
+
     return 0; // End the program
 }
 
@@ -43,7 +43,7 @@ char get_user_choice()
 
 char get_computer_choice()
 {
-    srand(time(0)); // Seed the random number generator 🌱
+    srand(time(0));              // Seed the random number generator 🌱
     int number = rand() % 3 + 1; // Generate a random number between 1 and 3 🎲
 
     char computer;
