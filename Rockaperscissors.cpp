@@ -21,6 +21,9 @@ int main()
 
     Choose_winner(player, computer); // Determine the winner
 
+    cout << "Press Enter to exit...";
+    cin.ignore(); // Ignore any leftover input
+    cin.get(); // Wait for user to press Enter before closing
     return 0; // End the program
 }
 
@@ -68,16 +71,16 @@ void show_choice(char choice)
     switch (choice)
     {
     case 'R':
-        cout << "Picked Rock 🪨" << '\n';
+        cout << "Picked Rock " << '\n';
         break;
     case 'P':
-        cout << "Picked Paper 📄" << '\n';
+        cout << "Picked Paper " << '\n';
         break;
     case 'S':
-        cout << "Picked Scissors ✂️" << '\n';
+        cout << "Picked Scissors " << '\n';
         break;
     default:
-        cout << "Invalid choice ❌" << endl;
+        cout << "Invalid choice " << endl;
         break;
     }
 }
@@ -86,30 +89,30 @@ void Choose_winner(char player, char computer)
 {
     if (player == 'R' && computer == 'S')
     {
-        cout << "You win! 🎉 Rock crushes Scissors." << endl;
+        cout << "You win!  Rock crushes Scissors." << endl;
     }
     else if (player == 'S' && computer == 'R')
     {
-        cout << "You lose! 😢 Rock crushes Scissors." << endl;
+        cout << "You lose!  Rock crushes Scissors." << endl;
     }
     else if (player == 'P' && computer == 'R')
     {
-        cout << "You win! 🎉 Paper covers Rock." << endl;
+        cout << "You win!  Paper covers Rock." << endl;
     }
     else if (player == 'R' && computer == 'P')
     {
-        cout << "You lose! 😢 Paper covers Rock." << endl;
+        cout << "You lose!  Paper covers Rock." << endl;
     }
     else if (player == 'S' && computer == 'P')
     {
-        cout << "You win! 🎉 Scissors cut Paper." << endl;
+        cout << "You win!  Scissors cut Paper." << endl;
     }
     else if (player == 'P' && computer == 'S')
     {
-        cout << "You lose! 😢 Scissors cut Paper." << endl;
+        cout << "You lose! Scissors cut Paper." << endl;
     }
     else
     {
-        cout << "It's a tie! 🤝" << endl; // Handle the tie situation
+        cout << "It's a tie!" << endl; // Handle the tie situation
     }
 }
