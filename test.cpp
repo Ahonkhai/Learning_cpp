@@ -1,7 +1,12 @@
 #include <iostream>
+#include <cstring>
+#include <array>
 
 int main()
 {
+
+    std::array<std::string, 2> name = {"David", "Jonathan"};
+    std::cout << name[1] << '\n';
 
     std::string my_name;
     std::cout << "what is your name?" << '\n';
