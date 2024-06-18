@@ -30,10 +30,10 @@ int main()
 
     array<string, 12> month = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
 
-    // for (const auto& month : month)
-    // {
-    //     cout << month << '\n';
-    // }
+    for (const auto& month : month)
+    {
+        cout << month << '\n';
+    }
 
     // Another test
         int choice;
