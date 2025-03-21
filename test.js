@@ -31,3 +31,9 @@ for (let a = 0; a < multiple_array.length; a++) {
 }
 
 console.log(array_sum);
+
+
+
+
+
+console.log("Hello, World!");

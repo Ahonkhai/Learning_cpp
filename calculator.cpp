@@ -18,8 +18,6 @@ int main()
     std::cout << "Input second number" << '\n';
     std::cin >> second_number;
 
-    // ADD
-
     double result;
     switch (math_operator)
     {
